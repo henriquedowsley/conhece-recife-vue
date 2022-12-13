@@ -1,0 +1,7 @@
+{
+  "name": "conhece-recife-vue",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
