@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="230.799" viewBox="0 0 430 230.799">
+  <g id="wave-blue-and-orange" transform="translate(0)">
+    <path id="Path_2" data-name="Path 2" d="M0,0H430V131S395.356,67.984,318.292,80.427c-47.764,6.823-119.61,90.31-197.477,101.95S0,179,0,179Z" transform="translate(0 44)" fill="#f88000"/>
+    <path id="Path_1" data-name="Path 1" d="M0,0H430V158.395S398.166,94.324,327.925,98.739c-36.124.8-76.367,28.293-115.6,48.968-35.729,18.83-76.663,31.6-110.379,33.716C31.709,185.837,0,173.395,0,173.395Z" fill="#007ef4"/>
+  </g>
+</svg>
