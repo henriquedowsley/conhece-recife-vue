@@ -10,3 +10,10 @@ const router = useRouter()
 
 const goBack = () => router.back()
 </script>
+
+<style scoped lang="scss">
+.go-back-button {
+  width: max-content;
+  height: max-content;
+}
+</style>

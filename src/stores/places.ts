@@ -11,8 +11,6 @@ export const usePlacesStore = defineStore('places', {
       const { data } = await request.get('/places')
 
       this.list = data
-
-      console.log(data)
     }
   }
 })

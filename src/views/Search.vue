@@ -1,22 +1,27 @@
 <template>
-  <Suspense>
-    <div class="search">
-      <GoBackButton />
-    </div>
-  </Suspense>
+  <div class="search">
+    <GoBackButton />
+
+    <PlacesSlides />
+  </div>
 </template>
 
 <script lang="ts" setup>
-import { GoBackButton } from '@/components/atoms'
 import { usePlacesStore } from '@/stores/places'
+import { GoBackButton } from '@/components/atoms'
+import { PlacesSlides } from '@/components/molecules'
 
 const places = usePlacesStore()
 
-await places.fetchAll()
+places.fetchAll()
 </script>
 
 <style scoped lang="scss">
 .search {
-  padding: 2rem;
+  padding: 1rem;
+  height: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: max-content;
 }
 </style>

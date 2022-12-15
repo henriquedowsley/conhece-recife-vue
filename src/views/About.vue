@@ -89,11 +89,16 @@ import { GoBackButton } from '@/components/atoms'
     font-size: 14px;
     .introduction {
       display: grid;
-      grid-template-columns: 63px 1fr;
+      grid-template-columns: 60px 1fr;
       gap: 1rem;
       align-items: center;
       h6 {
         font-size: 15px;
+        margin: 0;
+      }
+      img {
+        position: relative;
+        left: -31px;
       }
     }
   }
