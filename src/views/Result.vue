@@ -1,12 +1,5 @@
 <template>
   <div class="result">
-    <pre>
-      {{ filters.categoryIds }}
-    </pre>
-
-    <pre>
-      {{ filters.accessibilityIds }}
-    </pre>
     <GoBackButton />
 
     <PlacesSlide />
@@ -19,9 +12,6 @@
 import { GoBackButton } from '@/components/atoms'
 import { PlacesSlide } from '@/components/molecules'
 import { PlaceList } from '@/components/organisms'
-import { useFilters } from '@/stores/filters'
-
-const filters = useFilters()
 </script>
 
 <style scoped lang="scss">
