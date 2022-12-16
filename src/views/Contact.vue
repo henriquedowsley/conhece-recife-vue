@@ -14,6 +14,6 @@ import { ContactForm } from '@/components/molecules'
 .contact {
   padding: 2rem;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
 }
 </style>

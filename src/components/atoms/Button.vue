@@ -21,17 +21,19 @@ withDefaults(defineProps<Props>(), {
 .button {
   background-color: var(--primary-color);
   text-transform: uppercase;
-  padding: 1rem 3rem;
   border-radius: 0.7rem;
-  width: max-content;
-  height: max-content;
+  width: 231px;
+  height: 59px;
   font-weight: bold;
   cursor: pointer;
   cursor: #fff;
   border: none;
+  color: #fff;
+  letter-spacing: 1.25px;
   &.disabled {
     cursor: not-allowed;
     opacity: 0.5;
   }
 }
+  
 </style>

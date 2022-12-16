@@ -10,10 +10,10 @@
 
 <style scoped lang="scss">
 .menu-option {
-  border: 1.5px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   border-radius: 1rem;
   width: 312px;
-  height: 30px;
+  height: 33px;
   position: relative;
   display: grid;
   align-items: center;

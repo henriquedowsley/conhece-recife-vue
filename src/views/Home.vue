@@ -5,7 +5,7 @@
     <img src="@/assets/images/logo-v1.svg" class="logo" />
 
     <Button @click="router.push('menu')">Vem conhecer!</Button>
-
+    
     <img src="@/assets/images/wave-bottom.svg" class="wave-bottom" />
   </div>
 </template>
@@ -31,9 +31,6 @@ const router = useRouter()
     display: grid;
     justify-self: center;
     align-self: end;
-  }
-  .logo {
-    width: 150px;
   }
 }
 </style>

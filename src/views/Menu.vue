@@ -24,10 +24,10 @@ const router = useRouter()
   gap: 4.5rem;
   grid-auto-rows: max-content;
   align-content: center;
-  height: 100%;
+  height: 85%;
   .options {
     display: grid;
-    gap: 2rem;
+    gap: 2.5rem;
     grid-auto-rows: max-content;
     .menu-option {
       &:nth-child(1) {

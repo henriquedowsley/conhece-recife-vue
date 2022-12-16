@@ -1,3 +1,6 @@
 export { default as MenuOption } from './MenuOption.vue'
 export { default as ContactForm } from './ContactForm.vue'
 export { default as PlacesSlides } from './PlacesSlides.vue'
+export { default as CategoryFilter } from './CategoryFilter.vue'
+export { default as AccessibilityFilter } from './AccessibilityFilter.vue'
+export { default as PlacesList } from './PlacesList.vue'
