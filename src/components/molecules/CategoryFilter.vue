@@ -1,30 +1,32 @@
 <template>
-    <div>
-        <Collapse collapseType="category" v-bind:filter-list="fList" >Buscar por categoria</Collapse>
-    </div>
+  <div>
+    <Collapse collapseType="category" v-bind:filter-list="fList">
+      Buscar por categoria
+    </Collapse>
+  </div>
 </template>
-  
+
 <script setup lang="ts">
-  import { Collapse } from '@/components/bosons';
-  import { Filter } from '@/models/Filter';
-  import { useCategoriesStore } from '@/stores/categories'
-  import { onMounted } from 'vue'
-  
-  const categories = useCategoriesStore()
+import { Collapse } from '@/components/bosons'
+import { Filter } from '@/models/Filter'
+import { useCategoriesStore } from '@/stores/categories'
+import { onMounted } from 'vue'
 
-  const fList = new Array<Filter>()
+const categories = useCategoriesStore()
 
-  onMounted(async () => {
-    await categories.fetchAll()
+const fList = new Array<Filter>()
 
-    for (var cat in categories.list) {
-      var filter: Filter = {
-        id: categories.list[cat].id,
-        name: categories.list[cat].name,
-        icon: categories.list[cat].icon
-      }
+onMounted(async () => {
+  await categories.fetchAll()
 
-      fList.push(filter)
+  for (var cat in categories.list) {
+    var filter: Filter = {
+      id: categories.list[cat].id,
+      name: categories.list[cat].name,
+      icon: categories.list[cat].icon
     }
-  })
+
+    fList.push(filter)
+  }
+})
 </script>

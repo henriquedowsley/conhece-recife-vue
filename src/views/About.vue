@@ -87,6 +87,7 @@ import { GoBackButton } from '@/components/atoms'
   main {
     padding: 0rem 2rem;
     font-size: 14px;
+    text-align: justify;
     .introduction {
       display: grid;
       grid-template-columns: 60px 1fr;

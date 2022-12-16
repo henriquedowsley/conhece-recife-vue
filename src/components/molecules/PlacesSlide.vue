@@ -1,5 +1,5 @@
 <template>
-  <div class="places-slides">
+  <div class="places-slide">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="place in places.list" :key="place.id">
@@ -41,7 +41,7 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
-.places-slides {
+.places-slide {
   overflow: hidden;
   .swiper {
     width: 100%;

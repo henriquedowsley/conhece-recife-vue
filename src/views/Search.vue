@@ -2,39 +2,50 @@
   <div class="search">
     <GoBackButton />
 
-    <PlacesSlides />
+    <PlacesSlide />
 
-    <CategoryFilter />
+    <CategoriesFilter />
 
-    <AccessibilityFilter />
-    
-    <Button class=button @click="router.push('/result?categories=1&accessibilities=2  ')">Buscar</Button>
+    <AccessibilitiesFilter />
+
+    <Button @click="router.push('/result')"> Buscar </Button>
   </div>
 </template>
 
 <script lang="ts" setup>
-  import { Button } from '@/components/atoms'
-  import { usePlacesStore } from '@/stores/places'
-  import { GoBackButton } from '@/components/atoms'
-  import { PlacesSlides, CategoryFilter, AccessibilityFilter } from '@/components/molecules'
-  import { useRouter } from 'vue-router'
+import { Button } from '@/components/atoms'
+import { usePlacesStore } from '@/stores/places'
+import { useCategoriesStore } from '@/stores/categories'
+import { useAccessibilitiesStore } from '@/stores/accessibilities'
+import { useRouter } from 'vue-router'
 
-  const router = useRouter()
+// components
+import { GoBackButton } from '@/components/atoms'
+import { PlacesSlide } from '@/components/molecules'
+import { CategoriesFilter, AccessibilitiesFilter } from '@/components/organisms'
 
-  const places = usePlacesStore()
+const router = useRouter()
+const places = usePlacesStore()
+const categories = useCategoriesStore()
+const accessibilities = useAccessibilitiesStore()
 
-  places.fetchAll()
-  </script>
+places.fetchAll()
 
-  <style scoped lang="scss">
-  .search {
-    padding: 1rem;
-    height: 100%;
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: max-content;
-    .button {
-        justify-self: center;
-    }
+categories.fetchAll()
+
+accessibilities.fetchAll()
+</script>
+
+<style scoped lang="scss">
+.search {
+  padding: 1rem;
+  height: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: max-content;
+  .button {
+    margin-top: 3rem;
+    justify-self: center;
   }
+}
 </style>
